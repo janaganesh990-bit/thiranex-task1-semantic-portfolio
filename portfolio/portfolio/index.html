@@ -4,52 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jana Portfolio | Home</title>
-    <meta name="description" content="Personal portfolio website of Jana, web developer.">
-    <meta name="keywords" content="portfolio, web developer, HTML5, accessibility">
-    <meta name="author" content="Jana">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Personal portfolio website of Jana, web developer">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<header>
+<header class="site-header">
     <h1>Jana Portfolio</h1>
 
-    <nav aria-label="Main navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
+    <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 </header>
 
-<main id="main-content">
-    <section>
-        <h2>Welcome</h2>
-        <p>Hello! I am Jana, a passionate web developer focused on accessibility and modern web technologies.</p>
+<main id="main-content" class="container">
+
+    <section class="hero card">
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+            Hello! I’m Jana, a passionate web developer focused on
+            accessibility, responsive design, and modern web technologies.
+        </p>
     </section>
 
-    <section>
+    <section class="highlights">
         <h2>Highlights</h2>
 
-        <article>
-            <h3>Semantic HTML</h3>
-            <p>Building websites with clean structure and accessibility.</p>
-        </article>
+        <div class="projects-grid">
+            <article class="card">
+                <h3>Semantic HTML</h3>
+                <p>
+                    Building websites with clean structure and strong accessibility.
+                </p>
+            </article>
 
-        <article>
-            <h3>Responsive Design</h3>
-            <p>Creating mobile-friendly and modern UI.</p>
-        </article>
+            <article class="card">
+                <h3>Responsive Design</h3>
+                <p>
+                    Creating seamless experiences across mobile, tablet, and desktop.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Modern CSS</h3>
+                <p>
+                    Using Grid, Flexbox, animations, and scalable architecture.
+                </p>
+            </article>
+        </div>
     </section>
+
 </main>
 
 <footer>
-    <p>&copy; 2026 Jana</p>
+    <p>&copy; 2026 Jana. All Rights Reserved.</p>
 </footer>
 
+<script src="../js/theme.js"></script>
 </body>
 </html>

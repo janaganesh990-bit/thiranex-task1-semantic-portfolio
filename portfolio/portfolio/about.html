@@ -4,42 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jana Portfolio | About</title>
-    <meta name="description" content="Learn more about Jana.">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Learn more about Jana">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<header>
+<header class="site-header">
     <h1>About Me</h1>
 
-    <nav aria-label="Main navigation">
-        <ul>
+    <nav aria-label="Main Navigation">
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html" class="active">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 </header>
 
-<main id="main-content">
-    <section>
+<main id="main-content" class="container">
+
+    <section class="about-section card">
         <h2>Who Am I?</h2>
 
-        <img src="profile.jpg" alt="Portrait of Jana, web developer">
+        <!-- Replace with your own image if available -->
+        <img 
+            src="../assets/profile.jpeg" 
+            alt="Portrait of Jana, web developer"
+            class="profile-image"
+        >
 
         <p>
-            I am a developer passionate about frontend engineering,
-            accessibility, UI/UX, and building premium digital experiences.
+            I am a passionate frontend developer focused on building
+            accessible, responsive, and premium digital experiences.
+        </p>
+
+        <p>
+            My interests include web development, UI/UX design,
+            responsive architecture, and modern frontend engineering.
+        </p>
+
+        <p>
+            I enjoy transforming ideas into elegant user interfaces
+            using HTML, CSS, JavaScript, and modern web technologies.
         </p>
     </section>
+
 </main>
 
 <footer>
-    <p>&copy; 2026 Jana</p>
+    <p>&copy; 2026 Jana. All Rights Reserved.</p>
 </footer>
 
+<script src="../js/theme.js"></script>
 </body>
 </html>
